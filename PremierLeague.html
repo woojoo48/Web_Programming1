@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>해외 축구 리그 순위</title>
+    <link type="text/css" rel="stylesheet" href="PLStyle.css">
+</head>
+<body>
+    <header>
+        <h1>해외 축구 리그 순위</h1>
+    </header>
+
+    <nav>
+        <a href="PremierLeague.html" class="active">프리미어리그</a>
+        <a href="LaLiga.html">라리가</a>
+        <a href="Bundesliga.html">분데스리가</a>
+        <a href="SerieA.html">세리에A</a>
+    </nav>
+
+    <main>
+        <section class="standings">
+            <h2>
+                <img src="media_PL/pl.png" alt="프리미어리그 로고" class="header-logo">
+                2024-25 프리미어리그 순위표</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>팀</th>
+                        <th>경기</th>
+                        <th>승</th>
+                        <th>무</th>
+                        <th>패</th>
+                        <th>득점</th>
+                        <th>실점</th>
+                        <th>득실</th>
+                        <th>승점</th>
+                        <th style="position: relative;">
+                            <div class="season-selector">
+                                <label for="season">시즌 선택:</label>
+                                <select id="season">
+                                    <option value="2024-25" selected>2024-25</option>
+                                    <option value="2023-24">2023-24</option>
+                                    <option value="2022-23">2022-23</option>
+                                    <option value="2021-22">2021-22</option>
+                                    <option value="2020-21">2020-21</option>
+                                </select>
+                            </div>
+                            최근 5경기
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="champions-league">
+                        <td>1</td>
+                        <td class="team-info">
+                            <img src="media_PL/Liverfool.png" alt="리버풀" class="team-logo">
+                            <span>리버풀</span>
+                        </td>
+                        <td>34</td>
+                        <td>25</td>
+                        <td>7</td>
+                        <td>2</td>
+                        <td>80</td>
+                        <td>32</td>
+                        <td>48</td>
+                        <td>82</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>2</td>
+                        <td class="team-info">
+                            <img src="media_PL/arsenal.png" alt="아스날" class="team-logo">
+                            <span>아스날</span>
+                        </td>
+                        <td>34</td>
+                        <td>18</td>
+                        <td>13</td>
+                        <td>3</td>
+                        <td>63</td>
+                        <td>29</td>
+                        <td>34</td>
+                        <td>67</td>
+                        <td class="recent-form">
+                            <img src="media/win.png" alt="승" class="form-icon">
+                            <img src="media/drow.png" alt="무" class="form-icon">
+                            <img src="media/drow.png" alt="무" class="form-icon">
+                            <img src="media/win.png" alt="승" class="form-icon">
+                            <img src="media/drow.png" alt="무" class="form-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>3</td>
+                        <td class="team-info">
+                            <img src="media_PL/Newcathle.png" alt="뉴캐슬" class="team-logo">
+                            <span>뉴캐슬</span>
+                        </td>
+                        <td>34</td>
+                        <td>19</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>65</td>
+                        <td>44</td>
+                        <td>21</td>
+                        <td>62</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>4</td>
+                        <td class="team-info">
+                            <img src="media_PL/Mancity.png" alt="맨 시티" class="team-logo">
+                            <span>맨 시티</span>
+                        </td>
+                        <td>34</td>
+                        <td>18</td>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>66</td>
+                        <td>43</td>
+                        <td>23</td>
+                        <td>61</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="team-info">
+                            <img src="media_PL/Chelsea.png" alt="첼시" class="team-logo">
+                            <span>첼시</span>
+                        </td>
+                        <td>34</td>
+                        <td>17</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>59</td>
+                        <td>40</td>
+                        <td>19</td>
+                        <td>60</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="team-info">
+                            <img src="media_PL/Notingum.png" alt="노팅엄 포레스트" class="team-logo">
+                            <span>노팅엄 포레스트</span>
+                        </td>
+                        <td>34</td>
+                        <td>18</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>53</td>
+                        <td>41</td>
+                        <td>12</td>
+                        <td>60</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="team-info">
+                            <img src="media_PL/AstonVilla.png" alt="애스턴 빌라" class="team-logo">
+                            <span>애스턴 빌라</span>
+                        </td>
+                        <td>34</td>
+                        <td>16</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>54</td>
+                        <td>49</td>
+                        <td>5</td>
+                        <td>57</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="team-info">
+                            <img src="media_PL/Fullum.png" alt="풀럼" class="team-logo">
+                            <span>풀럼</span>
+                        </td>
+                        <td>34</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>50</td>
+                        <td>46</td>
+                        <td>4</td>
+                        <td>51</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="team-info">
+                            <img src="media_PL/Brighton.png" alt="브라이턴" class="team-logo">
+                            <span>브라이턴</span>
+                        </td>
+                        <td>34</td>
+                        <td>13</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td>56</td>
+                        <td>55</td>
+                        <td>1</td>
+                        <td>51</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="team-info">
+                            <img src="media_PL/Bonmouth.png" alt="본머스" class="team-logo">
+                            <span>본머스</span>
+                        </td>
+                        <td>34</td>
+                        <td>13</td>
+                        <td>11</td>
+                        <td>10</td>
+                        <td>53</td>
+                        <td>41</td>
+                        <td>12</td>
+                        <td>50</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="team-info">
+                            <img src="media_PL/Brendford.png" alt="브렌트퍼드" class="team-logo">
+                            <span>브렌트퍼드</span>
+                        </td>
+                        <td>34</td>
+                        <td>14</td>
+                        <td>7</td>
+                        <td>13</td>
+                        <td>58</td>
+                        <td>50</td>
+                        <td>8</td>
+                        <td>49</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="team-info">
+                            <img src="media_PL/cristalPalace.png" alt="크리스털 팰리스" class="team-logo">
+                            <span>크리스털 팰리스</span>
+                        </td>
+                        <td>34</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>43</td>
+                        <td>47</td>
+                        <td>-4</td>
+                        <td>45</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="team-info">
+                            <img src="media_PL/Wolves.png" alt="울브스" class="team-logo">
+                            <span>울브스</span>
+                        </td>
+                        <td>34</td>
+                        <td>12</td>
+                        <td>5</td>
+                        <td>17</td>
+                        <td>51</td>
+                        <td>61</td>
+                        <td>-10</td>
+                        <td>41</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="team-info">
+                            <img src="media_PL/ManUnited.png" alt="맨유" class="team-logo">
+                            <span>맨유</span>
+                        </td>
+                        <td>34</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>15</td>
+                        <td>39</td>
+                        <td>47</td>
+                        <td>-8</td>
+                        <td>39</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="team-info">
+                            <img src="media_PL/Everton.png" alt="에버턴" class="team-logo">
+                            <span>에버턴</span>
+                        </td>
+                        <td>34</td>
+                        <td>8</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td>34</td>
+                        <td>41</td>
+                        <td>-7</td>
+                        <td>38</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="team-info">
+                            <img src="media_PL/Tottenham.png" alt="토트넘" class="team-logo">
+                            <span>토트넘</span>
+                        </td>
+                        <td>34</td>
+                        <td>11</td>
+                        <td>4</td>
+                        <td>19</td>
+                        <td>62</td>
+                        <td>56</td>
+                        <td>6</td>
+                        <td>37</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="team-info">
+                            <img src="media_PL/Westham.png" alt="웨스트 햄" class="team-logo">
+                            <span>웨스트 햄</span>
+                        </td>
+                        <td>34</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>16</td>
+                        <td>39</td>
+                        <td>58</td>
+                        <td>-19</td>
+                        <td>36</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>18</td>
+                        <td class="team-info">
+                            <img src="media_PL/Ipswitch.png" alt="입스위치" class="team-logo">
+                            <span>입스위치</span>
+                        </td>
+                        <td>34</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>21</td>
+                        <td>33</td>
+                        <td>74</td>
+                        <td>-41</td>
+                        <td>21</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>19</td>
+                        <td class="team-info">
+                            <img src="media_PL/Lestercity.png" alt="레스터 시티" class="team-logo">
+                            <span>레스터 시티</span>
+                        </td>
+                        <td>34</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>24</td>
+                        <td>27</td>
+                        <td>76</td>
+                        <td>-49</td>
+                        <td>18</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>20</td>
+                        <td class="team-info">
+                            <img src="media_PL/southhamton.png" alt="사우스햄튼" class="team-logo">
+                            <span>사우스햄튼</span>
+                        </td>
+                        <td>34</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>27</td>
+                        <td>25</td>
+                        <td>80</td>
+                        <td>-55</td>
+                        <td>11</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>© 2025 해외 축구 리그 순위 정보 사이트 | 데이터 제공: 
+            <img src="media_PL/pl.png" alt="프리미어리그 로고" class="league-logo">
+            <a href="https://www.premierleague.com/" target="_blank">프리미어리그</a></p>
+    </footer>
+</body>
+</html>

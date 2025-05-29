@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>해외 축구 리그 순위</title>
+    <link type="text/css" rel="stylesheet" href="LLStyle.css">
+</head>
+<body>
+    <header>
+        <h1>해외 축구 리그 순위</h1>
+    </header>
+
+    <nav>
+        <a href="PremierLeague.html">프리미어리그</a>
+        <a href="LaLiga.html" class="active">라리가</a>
+        <a href="Bundesliga.html">분데스리가</a>
+        <a href="SerieA.html">세리에A</a>
+    </nav>
+
+    <main>
+        <section class="standings">
+            <h2>
+                <img src="media_Laliga/LL.png" alt="라리가 로고" class="header-logo">
+                2024-25 라리가 순위표</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>팀</th>
+                        <th>경기</th>
+                        <th>승</th>
+                        <th>무</th>
+                        <th>패</th>
+                        <th>득점</th>
+                        <th>실점</th>
+                        <th>득실</th>
+                        <th>승점</th>
+                        <th style="position: relative;">
+                            <div class="season-selector">
+                                <label for="season">시즌 선택:</label>
+                                <select id="season">
+                                    <option value="2024-25" selected>2024-25</option>
+                                    <option value="2023-24">2023-24</option>
+                                    <option value="2022-23">2022-23</option>
+                                    <option value="2021-22">2021-22</option>
+                                    <option value="2020-21">2020-21</option>
+                                </select>
+                            </div>
+                            최근 5경기
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="champions-league">
+                        <td>1</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Barcelona.png" alt="바르셀로나" class="team-logo">
+                            <span>바르셀로나</span>
+                        </td>
+                        <td>33</td>
+                        <td>24</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>89</td>
+                        <td>32</td>
+                        <td>57</td>
+                        <td>76</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>2</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/RealMadirid.png" alt="레알 마드리드" class="team-logo">
+                            <span>레알 마드리드</span>
+                        </td>
+                        <td>33</td>
+                        <td>22</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>66</td>
+                        <td>31</td>
+                        <td>35</td>
+                        <td>72</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>3</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/ATMadrid.png" alt="아틀레티코" class="team-logo">
+                            <span>아틀레티코</span>
+                        </td>
+                        <td>33</td>
+                        <td>19</td>
+                        <td>9</td>
+                        <td>5</td>
+                        <td>56</td>
+                        <td>27</td>
+                        <td>29</td>
+                        <td>66</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="champions-league">
+                        <td>4</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Bilbao.png" alt="아틀레틱" class="team-logo">
+                            <span>아틀레틱</span>
+                        </td>
+                        <td>33</td>
+                        <td>16</td>
+                        <td>12</td>
+                        <td>5</td>
+                        <td>50</td>
+                        <td>26</td>
+                        <td>24</td>
+                        <td>60</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Viya.png" alt="비야레알" class="team-logo">
+                            <span>비야레알</span>
+                        </td>
+                        <td>33</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>56</td>
+                        <td>45</td>
+                        <td>11</td>
+                        <td>55</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Betis.png" alt="레알 베티스" class="team-logo">
+                            <span>레알 베티스</span>
+                        </td>
+                        <td>33</td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>50</td>
+                        <td>41</td>
+                        <td>9</td>
+                        <td>54</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Cellta.png" alt="셀타 비고" class="team-logo">
+                            <span>셀타 비고</span>
+                        </td>
+                        <td>33</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>13</td>
+                        <td>50</td>
+                        <td>49</td>
+                        <td>1</td>
+                        <td>46</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Osasuna.png" alt="오사수나" class="team-logo">
+                            <span>오사수나</span>
+                        </td>
+                        <td>33</td>
+                        <td>10</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>40</td>
+                        <td>46</td>
+                        <td>-6</td>
+                        <td>44</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Mayorca.png" alt="마요르카" class="team-logo">
+                            <span>마요르카</span>
+                        </td>
+                        <td>33</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>13</td>
+                        <td>31</td>
+                        <td>38</td>
+                        <td>-7</td>
+                        <td>44</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/RealSociedard.png" alt="레알 소시에다드" class="team-logo">
+                            <span>레알 소시에다드</span>
+                        </td>
+                        <td>33</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>32</td>
+                        <td>37</td>
+                        <td>-5</td>
+                        <td>42</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Rayo.png" alt="라요" class="team-logo">
+                            <span>라요</span>
+                        </td>
+                        <td>33</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>35</td>
+                        <td>42</td>
+                        <td>-7</td>
+                        <td>41</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Hetape.png" alt="헤타페" class="team-logo">
+                            <span>헤타페</span>
+                        </td>
+                        <td>33</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>14</td>
+                        <td>31</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>39</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Espanol.png" alt="에스파뇰" class="team-logo">
+                            <span>에스파뇰</span>
+                        </td>
+                        <td>33</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>14</td>
+                        <td>35</td>
+                        <td>42</td>
+                        <td>-7</td>
+                        <td>39</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Valencia.png" alt="발렌시아" class="team-logo">
+                            <span>발렌시아</span>
+                        </td>
+                        <td>33</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>37</td>
+                        <td>49</td>
+                        <td>-12</td>
+                        <td>39</td>
+                        <td class="recent-match">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Sevilla.png" alt="세비야" class="team-logo">
+                            <span>세비야</span>
+                        </td>
+                        <td>33</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>14</td>
+                        <td>35</td>
+                        <td>44</td>
+                        <td>-9</td>
+                        <td>37</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Girona.png" alt="지로나" class="team-logo">
+                            <span>지로나</span>
+                        </td>
+                        <td>33</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>16</td>
+                        <td>40</td>
+                        <td>52</td>
+                        <td>-12</td>
+                        <td>35</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Alaves.png" alt="알라베스" class="team-logo">
+                            <span>알라베스</span>
+                        </td>
+                        <td>33</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>35</td>
+                        <td>46</td>
+                        <td>-11</td>
+                        <td>34</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>18</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Ras.png" alt="라스팔마스" class="team-logo">
+                            <span>라스팔마스</span>
+                        </td>
+                        <td>33</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>17</td>
+                        <td>38</td>
+                        <td>53</td>
+                        <td>-15</td>
+                        <td>32</td>
+                        <td class="recent-match">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/win.png" alt="승" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>19</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Reganes.png" alt="레가네스" class="team-logo">
+                            <span>레가네스</span>
+                        </td>
+                        <td>33</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>15</td>
+                        <td>30</td>
+                        <td>49</td>
+                        <td>-19</td>
+                        <td>30</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                            <img src="media/drow.png" alt="무" class="match-icon">
+                        </td>
+                    </tr>
+                    <tr class="relegation">
+                        <td>20</td>
+                        <td class="team-info">
+                            <img src="media_Laliga/Baya.png" alt="바야돌리드" class="team-logo">
+                            <span>바야돌리드</span>
+                        </td>
+                        <td>33</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>25</td>
+                        <td>24</td>
+                        <td>81</td>
+                        <td>-57</td>
+                        <td>16</td>
+                        <td class="recent-match">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                            <img src="media/lose.png" alt="패" class="match-icon">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 해외 축구 리그 순위 정보 사이트 | 데이터 제공: 
+            <img src="media_Laliga/LL.png" alt="라리가 로고" class="league-logo">
+            <a href="https://www.laliga.com/en-GB" target="_blank">라 리가</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #EE342E;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #F39200; 
+    color: white;
+}
+
+.season-selector {
+    text-align: right;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.season-selector label {
+    font-size: 14px;
+    margin-right: 8px;
+    color: #666;
+}
+
+.season-selector select {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.season-selector select:focus {
+    border-color: #EE342E;
+    box-shadow: 0 0 3px rgba(238, 52, 46, 0.3);
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section.standings {
+    flex: 3;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+tr.champions-league:hover {
+    background-color: rgba(0, 150, 136, 0.2);
+}
+
+tr.relegation:hover {
+    background-color: rgba(244, 67, 54, 0.2);
+}
+
+thead tr:hover, tfoot tr:hover {
+    background-color: inherit;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.recent-match {
+    white-space: nowrap;
+}
+
+.match-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+}
+
+tr.champions-league {
+    background-color: rgba(238, 52, 46, 0.1);
+}
+
+tr.relegation {
+    background-color: rgba(244, 67, 54, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.league-logo {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+footer a {
+    color: #F39200; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
